@@ -1,5 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"description": "Default renovate configuration for elijaholmos repositories",
 	"timezone": "America/Phoenix",
 	"extends": [
 		":ignoreModulesAndTests",
@@ -7,7 +8,8 @@
 		":prConcurrentLimit10",
 		"group:recommended",
 		"workarounds:all",
-		":semanticCommitType(chore)"
+		":semanticCommitType(chore)",
+		":label(dependencies)"
 	],
 	"automerge": true,
 	"automergeType": "pr",
