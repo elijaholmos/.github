@@ -16,5 +16,11 @@
 	"automergeType": "pr",
 	"automergeStrategy": "squash",
 	"platformAutomerge": true,
-	"lockFileMaintenance": { "enabled": true, "automerge": true }
+	"lockFileMaintenance": { "enabled": true, "automerge": true },
+	"packageRules": [
+	        {
+		    "matchManagers": ["github-actions"],
+		    "extends": [":semanticCommitType(ci)", ":semanticCommitScope(deps)"]
+		}
+	]
 }
