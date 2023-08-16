@@ -1,8 +1,0 @@
-title = "elijaholmos gitleaks base config"
-
-[extend]
-useDefault = true
-
-[allowlist]
-description = "global allow lists"
-paths = ['''^pnpm-lock.yaml$''']
