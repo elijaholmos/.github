@@ -29,6 +29,7 @@ jobs:
         if: always() && (steps.lint_pr_title.outputs.error_message != null)
         with:
           header: pr-title-lint-error
+          skip_unchanged: true
           message: |
             Hi 👋 Just a quick reminder - all pull request titles are required to follow the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/), and your proposed title will need to be adjusted before it can be merged.
 
